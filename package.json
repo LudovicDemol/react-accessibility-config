@@ -1,7 +1,7 @@
 {
   "name": "@dolu13/react-accessibility-config",
-  "version": "1.0.10",
-  "description": "Composant React réutilisable pour les personnaliser l'accessibilité avec style Material-UI",
+  "version": "1.0.13",
+  "description": "Composant React r\u00e9utilisable pour les personnaliser l'accessibilit\u00e9 avec style Material-UI",
   "type": "commonjs",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -29,9 +29,9 @@
     }
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "node api.js && vite",
     "clean": "rimraf dist",
-    "build": "tsc -p tsconfig.build.json",
+    "build": "node api.js && tsc -p tsconfig.build.json",
     "build:types": "tsc --emitDeclarationOnly --outDir dist",
     "build:watch": "vite build --watch",
     "Preview": "vite preview",
